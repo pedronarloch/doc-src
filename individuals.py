@@ -12,7 +12,7 @@ class Individual(object):
 		self.indId = indId
 		self.size = 0
 
-	def randGen(self, ub, lb):	
+	def rand_gen(self, ub, lb):	
 		for i in range(0, self.size):			
 			self.dimensions.insert(i,random.uniform(lb[i], ub[i]))
 

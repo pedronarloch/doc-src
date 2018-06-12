@@ -1,0 +1,9 @@
+receptor = firstImprovement/test2/3AID/macro.pdbqt
+ligand = firstImprovement/test2/3AID/modified/ligand.pdbqt
+center_x = 1.474
+center_y = 1.321
+center_z = 11.354
+size_x = 11.0
+size_y = 11.0
+size_z = 11.0
+out = firstImprovement/test2/3AID/modified/result.pdbqt

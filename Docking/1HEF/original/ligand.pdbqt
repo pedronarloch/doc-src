@@ -1,0 +1,96 @@
+REMARK  10 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK       I    between atoms: CA_1  and  C_2 
+REMARK       I    between atoms: CA_1  and  C10_20 
+REMARK    1  A    between atoms: CA_1  and  C13_42 
+REMARK       I    between atoms: C_2  and  N_4 
+REMARK       I    between atoms: N_4  and  CA_5 
+REMARK    2  A    between atoms: CA_5  and  CB_17 
+REMARK       I    between atoms: CA_5  and  C_6 
+REMARK       I    between atoms: C_6  and  N_8 
+REMARK       I    between atoms: N_8  and  CA_9 
+REMARK    3  A    between atoms: CA_9  and  C_10 
+REMARK    4  A    between atoms: CA_9  and  CB_14 
+REMARK    5  A    between atoms: C_10  and  O2_12 
+REMARK       I    between atoms: C10_20  and  C2_21 
+REMARK       I    between atoms: C2_21  and  C1_23 
+REMARK    6  A    between atoms: C1_23  and  C3_35 
+REMARK       I    between atoms: C1_23  and  N_24 
+REMARK       I    between atoms: N_24  and  C_25 
+REMARK       I    between atoms: C_25  and  CA_27 
+REMARK    7  A    between atoms: CA_27  and  N_29 
+REMARK       I    between atoms: N_29  and  C_30 
+REMARK    8  A    between atoms: C_30  and  CA_32 
+REMARK    9  A    between atoms: C3_35  and  C4_36 
+REMARK   10  A    between atoms: C13_42  and  C14_43 
+ROOT
+HETATM    1  CA  PJJ I 205      -7.946  18.053  26.991  0.50 18.00     0.088 C 
+HETATM    2  C   PJJ I 205      -7.761  17.071  25.855  0.50 17.98     0.252 C 
+HETATM    3  O   PJJ I 205      -7.155  16.007  26.038  0.50 17.94    -0.271 OA
+HETATM    4  C10 PJJ I 205      -8.969  17.783  28.062  0.50 18.00     0.045 C 
+HETATM    5  C2  PJJ I 205     -10.418  17.473  27.749  0.50 17.98     0.175 C 
+HETATM    6  O1  PJJ I 205     -11.292  18.460  28.280  0.50 17.93    -0.221 OA
+HETATM    7  C1  PJJ I 205     -10.831  16.107  28.357  0.50 18.01     0.141 C 
+HETATM    8  N   PJJ I 205     -10.590  16.009  29.745  0.50 18.01    -0.235 NA
+ATOM      9  N   VAL I 210      -8.207  17.368  24.622  0.50 18.02    -0.230 NA
+ATOM     10  CA  VAL I 210      -7.953  16.432  23.516  0.50 17.97     0.186 C 
+ATOM     11  C   VAL I 210      -7.129  17.271  22.495  0.50 17.99     0.274 C 
+ATOM     12  O   VAL I 210      -7.559  18.371  22.126  0.50 17.94    -0.268 OA
+HETATM   13  N   VME I 211      -6.050  16.641  22.122  0.50 17.98    -0.228 NA
+HETATM   14  CA  VME I 211      -4.965  16.837  21.252  0.50 17.98     0.192 C 
+ATOM     15  C   ALA I 202     -10.043  15.353  30.741  0.50 18.01     0.274 C 
+ATOM     16  O   ALA I 202      -9.333  14.372  30.682  0.50 17.98    -0.268 OA
+ATOM     17  CA  ALA I 202     -10.334  16.011  32.125  0.50 18.01     0.186 C 
+ATOM     18  CB  ALA I 202      -9.060  16.473  32.821  0.50 18.01     0.037 C 
+ENDROOT
+BRANCH   1  19
+HETATM   19  C13 PJJ I 205      -6.557  18.028  27.750  0.50 18.00     0.036 C 
+BRANCH  19  20
+HETATM   20  C14 PJJ I 205      -5.447  18.185  26.867  0.50 18.02    -0.022 A 
+HETATM   21  C16 PJJ I 205      -4.487  17.160  26.773  0.50 18.00    -0.004 A 
+HETATM   22  C18 PJJ I 205      -3.394  17.283  25.892  0.50 18.04    -0.000 A 
+HETATM   23  C19 PJJ I 205      -3.259  18.453  25.103  0.50 17.98    -0.000 A 
+HETATM   24  C17 PJJ I 205      -4.226  19.460  25.177  0.50 17.98    -0.000 A 
+HETATM   25  C15 PJJ I 205      -5.322  19.340  26.052  0.50 18.01    -0.004 A 
+ENDBRANCH  19  20
+ENDBRANCH   1  19
+BRANCH  10  26
+ATOM     26  CB  VAL I 210      -9.120  15.786  22.824  0.50 18.00     0.032 C 
+ATOM     27  CG2 VAL I 210     -10.452  15.751  23.536  0.50 18.01     0.003 C 
+ATOM     28  CG1 VAL I 210      -8.811  14.388  22.245  0.50 18.00     0.003 C 
+ENDBRANCH  10  26
+BRANCH   7  29
+HETATM   29  C3  PJJ I 205     -12.372  15.977  28.102  0.50 18.02     0.053 C 
+BRANCH  29  30
+HETATM   30  C4  PJJ I 205     -12.955  14.659  28.617  0.50 18.02    -0.020 A 
+HETATM   31  C6  PJJ I 205     -14.128  14.695  29.382  0.50 18.02    -0.004 A 
+HETATM   32  C8  PJJ I 205     -14.662  13.473  29.870  0.50 18.01    -0.000 A 
+HETATM   33  C9  PJJ I 205     -14.022  12.273  29.587  0.50 18.01    -0.000 A 
+HETATM   34  C7  PJJ I 205     -12.824  12.232  28.847  0.50 17.99    -0.000 A 
+HETATM   35  C5  PJJ I 205     -12.287  13.433  28.347  0.50 17.98    -0.004 A 
+ENDBRANCH  29  30
+ENDBRANCH   7  29
+BRANCH  14  36
+HETATM   36  C   VME I 211      -3.978  17.899  21.761  0.50 18.02     0.294 C 
+HETATM   37  O   VME I 211      -4.110  18.174  22.955  0.50 18.07    -0.262 OA
+BRANCH  36  38
+HETATM   38  O2  VME I 211      -3.053  18.528  20.939  0.50 18.02    -0.298 OA
+HETATM   39  CM  VME I 211      -3.539  19.444  19.981  0.50 17.98     0.185 C 
+ENDBRANCH  36  38
+ENDBRANCH  14  36
+BRANCH  14  40
+HETATM   40  CB  VME I 211      -5.375  17.234  19.823  0.50 18.00     0.032 C 
+HETATM   41  CG1 VME I 211      -5.601  18.734  19.733  0.50 17.97     0.003 C 
+HETATM   42  CG2 VME I 211      -4.319  16.655  18.858  0.50 18.00     0.003 C 
+ENDBRANCH  14  40
+BRANCH  17  43
+ATOM     43  N   ALA I 202     -11.135  15.208  32.924  0.50 17.99    -0.229 NA
+ATOM     44  C   ALA I 201     -12.252  14.587  33.162  0.50 18.00     0.289 C 
+ATOM     45  O   ALA I 201     -13.275  14.436  32.477  0.50 18.00    -0.268 OA
+BRANCH  44  46
+ATOM     46  CA  ALA I 201     -12.296  13.889  34.557  0.50 17.97     0.381 C 
+ATOM     47  N   ALA I 201     -13.642  13.616  34.983  0.50 17.94     0.626 N 
+ATOM     48  CB  ALA I 201     -11.399  12.672  34.540  0.50 17.99     0.052 C 
+ENDBRANCH  44  46
+ENDBRANCH  17  43
+TORSDOF 19

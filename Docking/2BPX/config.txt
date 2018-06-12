@@ -1,0 +1,9 @@
+receptor = firstImprovement/test3/2BPX/macro.pdbqt
+ligand = firstImprovement/test3/2BPX/modified/ligand.pdbqt
+center_x = 13.070
+center_y = 25.495
+center_z = 4.565
+size_x = 11.0
+size_y = 11.0
+size_z = 11.0
+out = firstImprovement/test3/2BPX/modified/result.pdbqt

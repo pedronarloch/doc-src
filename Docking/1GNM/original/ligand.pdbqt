@@ -1,0 +1,88 @@
+REMARK  10 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK       I    between atoms: C3_1  and  C4_2 
+REMARK       I    between atoms: C3_1  and  C17_62 
+REMARK       I    between atoms: C4_2  and  C13_48 
+REMARK       I    between atoms: C13_5  and  C17_9 
+REMARK       I    between atoms: C13_5  and  C14_6 
+REMARK       I    between atoms: C14_6  and  C10_24 
+REMARK       I    between atoms: C14_6  and  C16_8 
+REMARK       I    between atoms: C17_9  and  N1_27 
+REMARK       I    between atoms: C18_10  and  C22_30 
+REMARK    1  A    between atoms: C19_11  and  C20_44 
+REMARK       I    between atoms: C1_15  and  C2_16 
+REMARK       I    between atoms: C22_30  and  N4_31 
+REMARK       I    between atoms: N4_31  and  C23_33 
+REMARK       I    between atoms: C23_33  and  C25_37 
+REMARK    2  A    between atoms: C23_33  and  C24_34 
+REMARK       I    between atoms: C25_37  and  C26_38 
+REMARK    3  A    between atoms: C26_38  and  C27_39 
+REMARK    4  A    between atoms: C27_39  and  N6_40 
+REMARK    5  A    between atoms: C20_44  and  C21_45 
+REMARK       I    between atoms: C13_48  and  C17_62 
+REMARK       I    between atoms: C5_49  and  C10_50 
+REMARK       I    between atoms: C18_63  and  C22_71 
+REMARK    6  A    between atoms: C20_66  and  C21_68 
+REMARK    7  A    between atoms: C20_66  and  C19_67 
+REMARK       I    between atoms: C22_71  and  N4_72 
+REMARK       I    between atoms: N4_72  and  C23_74 
+REMARK    8  A    between atoms: C23_74  and  C24_75 
+REMARK       I    between atoms: C23_74  and  C25_78 
+REMARK       I    between atoms: C25_78  and  C26_79 
+REMARK    9  A    between atoms: C26_79  and  C27_80 
+REMARK   10  A    between atoms: C27_80  and  N6_81 
+ROOT
+HETATM    1  C3  U0E A 100     -10.766  16.059  28.426  0.50 13.25     0.196 A 
+HETATM    2  C4  U0E A 100     -12.286  16.011  28.115  0.50 11.94     0.039 A 
+HETATM    3  C11 U0E A 100     -10.184  17.257  27.646  0.50 12.34     0.127 A 
+HETATM    4  C12 U0E A 100      -8.724  17.630  27.955  0.50 13.81     0.050 C 
+HETATM    5  C13 U0E A 100      -7.842  18.308  26.894  0.50 15.42     0.030 A 
+HETATM    6  C14 U0E A 100      -6.485  18.729  27.467  0.50 14.50     0.008 A 
+HETATM    7  C15 U0E A 100      -5.468  17.585  27.492  0.50 13.43     0.000 A 
+HETATM    8  C16 U0E A 100      -5.816  19.849  26.659  0.50 14.45     0.000 A 
+HETATM    9  C17 U0E A 100      -7.590  17.331  25.757  0.50 16.32     0.119 C 
+HETATM   10  C18 U0E A 100      -7.632  17.013  23.349  0.50 12.33     0.084 A 
+HETATM   11  C19 U0E A 100      -8.980  16.758  22.677  0.50 11.27     0.021 A 
+HETATM   12  N2  U0E A 100      -7.824  17.813  24.560  0.50 14.95     0.000 N 
+HETATM   13  O2  U0E A 100     -10.945  18.419  27.897  0.50  6.54     0.000 OA
+HETATM   14  O3  U0E A 100      -7.205  16.178  25.983  0.50 18.93     0.000 OA
+HETATM   15  C22 U0E A 100      -6.690  17.747  22.396  0.50 11.70     0.251 C 
+HETATM   16  N4  U0E A 100      -5.610  17.054  22.087  0.50 11.21    -0.230 NA
+HETATM   17  O5  U0E A 100      -6.960  18.886  21.985  0.50  7.46    -0.271 OA
+HETATM   18  C23 U0E A 100      -4.551  17.557  21.202  0.50 13.11     0.188 C 
+HETATM   19  C25 U0E A 100      -3.198  17.475  21.915  0.50 13.13     0.036 C 
+HETATM   20  C26 U0E A 100      -2.258  18.629  21.557  0.50 16.86     0.029 C 
+HETATM   21  C5  U0E A 100     -12.924  14.780  28.796  0.50 11.14     0.035 A 
+HETATM   22  C10 U0E A 100     -12.684  13.480  28.003  0.50 10.69     0.018 A 
+HETATM   23  C6  U0E A 100     -14.424  15.032  28.964  0.50 10.22     0.003 A 
+HETATM   24  C9  U0E A 100     -13.357  12.285  28.692  0.50 10.95     0.004 C 
+HETATM   25  C8  U0E A 100     -14.853  12.551  28.896  0.50  8.67     0.000 C 
+HETATM   26  C7  U0E A 100     -15.072  13.848  29.680  0.50  9.29     0.000 C 
+HETATM   27  N1  U0E A 100     -10.602  16.196  29.888  0.50 13.81     0.126 N 
+HETATM   28  C2  U0E A 100      -9.967  15.325  30.662  0.50 11.93     0.204 A 
+HETATM   29  C1  U0E A 100     -10.070  15.673  32.147  0.50 11.38     0.048 A 
+HETATM   30  O1  U0E A 100      -9.309  14.333  30.301  0.50 13.95     0.000 OA
+ENDROOT
+BRANCH  11  68
+HETATM   68  C20 U0E A 100      -8.879  15.807  21.487  0.50  9.51     0.092 C 
+BRANCH  68  69
+HETATM   69  C21 U0E A 100      -8.698  16.547  20.165  0.50  8.13     0.274 C 
+HETATM   70  N3  U0E A 100      -8.050  15.973  19.169  0.50  6.80    -0.107 N 
+HETATM   71  O4  U0E A 100      -9.156  17.681  20.031  0.50  5.25    -0.269 OA
+ENDBRANCH  68  69
+ENDBRANCH  11  68
+BRANCH  18  77
+HETATM   77  C24 U0E A 100      -4.489  16.713  19.926  0.50 11.95     0.296 C 
+HETATM   78  O6  U0E A 100      -4.783  15.508  19.942  0.50 12.21    -0.267 OA
+HETATM   79  N5  U0E A 100      -4.114  17.252  18.758  0.50 13.03    -0.105 N 
+ENDBRANCH  18  77
+BRANCH  20  80
+HETATM   80  C27 U0E A 100      -1.763  19.402  22.784  0.50 18.40     0.145 C 
+BRANCH  80  81
+HETATM   81  N6  U0E A 100      -0.372  19.088  23.142  0.50 21.37    -0.083 NA
+HETATM   82  C28 U0E A 100       0.481  19.967  23.690  0.50 21.15     0.782 C 
+HETATM   83  N8  U0E A 100       1.774  19.709  23.929  0.50 21.97     0.063 N 
+HETATM   84  N7  U0E A 100       0.075  21.195  24.040  0.50 20.81     0.063 N 
+ENDBRANCH  80  81
+ENDBRANCH  20  80
+TORSDOF 29

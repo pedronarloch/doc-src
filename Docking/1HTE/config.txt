@@ -1,0 +1,9 @@
+receptor = firstImprovement/test2/1HTE/macro.pdbqt
+ligand = firstImprovement/test2/1HTE/modified/ligand.pdbqt
+center_x = 7.178
+center_y = 26.671
+center_z = 3.520
+size_x = 11.0
+size_y = 11.0
+size_z = 11.0
+out = firstImprovement/test2/1HTE/modified/result.pdbqt

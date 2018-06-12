@@ -13,52 +13,50 @@ import string
 
 class DockingProblem(Problem):
 
-	vinaPath = ''
-	vinaConfig = ''
+	vina_path = ''
+	vina_config = ''
 	docking_complex = ''
 	docking = None
 
-	cubeBasedSearch = False
+	cube_based_search = False
 
-	boxBounds = []
-	centerBounds = []
+	box_bounds = []
+	center_bounds = []
 
 
 	def __init__(self):
 		super().__init__()
 		print("Docking Problem Instantied!")
-		self.readParameters()
-		self.readVinaConfigFile()
+		self.read_parameters()
+		self.read_vina_config_file()
 		self.docking = Docking(self.docking_complex, "")
 		self.dimensions = 14
-		self.getBounds()
+		self.get_bounds()
 
-	def readParameters(self):
+	def read_parameters(self):
 		with open("docking_config.yaml", 'r') as stream:
 			try:
 				config = yaml.load(stream)
-				self.vinaPath = config['vina_path']
-				self.vinaConfig = config['vina_config']
+				self.vina_path = config['vina_path']
+				self.vina_config = config['vina_config']
 				self.docking_complex = config['complex']
-				self.cubeBasedSearch = config['cube_based']
+				self.cube_based_search = config['cube_based']
 			except yaml.YAMLError as exc:
 				print(exc)
 
-	def checkBounds(self, trial):
+	def check_bounds(self, trial):
 
-		if self.cubeBasedSearch == True:
-			print("Cube Based Bound Check")
-			self.cubeBasedBoundCheck(trial)
+		if self.cube_based_search == True:			
+			self.cube_based_bound_check(trial)
 
-		else:
-			print("Common Bound Check")
-			self.commonBoundCheck(trial)
+		else:			
+			self.common_bound_check(trial)
 			
 
-	def cubeBasedBoundCheck(self, trial):
+	def cube_based_bound_check(self, trial):
 		print("Cube Based Bound Check")
 
-	def commonBoundCheck(self, trial):
+	def common_bound_check(self, trial):
 		for i in range(0, len(trial)):
 				if trial[i] < self.lb[i]:
 					trial[i] = random.uniform(self.lb[i], self.ub[i])
@@ -66,8 +64,9 @@ class DockingProblem(Problem):
 					trial[i] = random.uniform(self.lb[i], self.ub[i])
 
 
-	def readVinaConfigFile(self):
-		file = open("Docking/"+self.docking_complex + "/" + self.vinaConfig)
+	def read_vina_config_file(self):
+		#print(self.docking_complex, )
+		file = open("Docking/"+self.docking_complex + "/" + self.vina_config)
 
 		while True:
 			bufferLine = file.readline().split()
@@ -76,45 +75,45 @@ class DockingProblem(Problem):
 				break
 
 			if(bufferLine[0] == "size_x"):
-				self.boxBounds.append(float(bufferLine[2]))
+				self.box_bounds.append(float(bufferLine[2]))
 			elif(bufferLine[0] == "size_y"):
-				self.boxBounds.append(float(bufferLine[2]))
+				self.box_bounds.append(float(bufferLine[2]))
 			elif(bufferLine[0] == "size_z"):
-				self.boxBounds.append(float(bufferLine[2]))
+				self.box_bounds.append(float(bufferLine[2]))
 			elif(bufferLine[0] == "center_x") :
-				self.centerBounds.append(float(bufferLine[2]))
+				self.center_bounds.append(float(bufferLine[2]))
 			elif(bufferLine[0] == "center_y"):
-				self.centerBounds.append(float(bufferLine[2]))
+				self.center_bounds.append(float(bufferLine[2]))
 			elif(bufferLine[0] == "center_z"):
-				self.centerBounds.append(float(bufferLine[2]))
+				self.center_bounds.append(float(bufferLine[2]))
 
 
 	def evaluate(self, angles):
 		self.docking.performDocking(angles)
-		a = getstatusoutput(self.vinaPath + ' --config Docking/' + self.docking_complex +"/"+self.vinaConfig + ' --score_only')
+		a = getstatusoutput(self.vina_path + ' --config Docking/' + self.docking_complex +"/"+self.vina_config + ' --score_only')
 		energy = (a[1].split("Affinity:")[1]).split()[0]
 		return float(energy)
 
-	def getBounds(self, label = 0):
+	def get_bounds(self, label = 0):
 		self.lb.clear()
 		self.ub.clear()
 
-		if self.cubeBasedSearch == True:			
+		if self.cube_based_search == True:			
 
-			dimXA = (-1) * self.boxBounds[0]/2.0
-			dimXB = (-1) * self.boxBounds[0]/6.0
-			dimXC = self.boxBounds[0]/6.0
-			dimXD = self.boxBounds[0]/2.0
+			dimXA = (-1) * self.box_bounds[0]/2.0
+			dimXB = (-1) * self.box_bounds[0]/6.0
+			dimXC = self.box_bounds[0]/6.0
+			dimXD = self.box_bounds[0]/2.0
 			
-			dimYA = (-1) * self.boxBounds[1]/2.0
-			dimYB = (-1) * self.boxBounds[1]/6.0
-			dimYC = self.boxBounds[1]/6.0
-			dimYD = self.boxBounds[1]/2.0
+			dimYA = (-1) * self.box_bounds[1]/2.0
+			dimYB = (-1) * self.box_bounds[1]/6.0
+			dimYC = self.box_bounds[1]/6.0
+			dimYD = self.box_bounds[1]/2.0
 			
-			dimZA = (-1) * self.boxBounds[2]/2.0
-			dimZB = (-1) * self.boxBounds[2]/6.0
-			dimZC = self.boxBounds[2]/6.0
-			dimZD = self.boxBounds[2]/2.0
+			dimZA = (-1) * self.box_bounds[2]/2.0
+			dimZB = (-1) * self.box_bounds[2]/6.0
+			dimZC = self.box_bounds[2]/6.0
+			dimZD = self.box_bounds[2]/2.0
 
 			if label == 1:
 				self.lb.append(dimXB, dimYB, dimZB)
@@ -199,8 +198,8 @@ class DockingProblem(Problem):
 				self.ub.append(dimXA, dimYA. dimZD)
 		else:
 			for i in range(0, 3):
-				self.lb.append(float(self.boxBounds[i]/2) * (-1))
-				self.ub.append(float(self.boxBounds[i]/2))
+				self.lb.append(float(self.box_bounds[i]/2) * (-1))
+				self.ub.append(float(self.box_bounds[i]/2))
 
 		for i in range(0,11):
 			self.lb.append(-pi)

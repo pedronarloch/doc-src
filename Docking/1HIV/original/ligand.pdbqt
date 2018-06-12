@@ -1,0 +1,109 @@
+REMARK  10 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK       I    between atoms: CA2_1  and  CH_34 
+REMARK    1  A    between atoms: CA2_1  and  CB1_27 
+REMARK       I    between atoms: CA2_1  and  N1_2 
+REMARK       I    between atoms: N1_2  and  C9_3 
+REMARK       I    between atoms: C9_3  and  CA1_5 
+REMARK    2  A    between atoms: CA1_5  and  CB_21 
+REMARK       I    between atoms: CA1_5  and  N_6 
+REMARK       I    between atoms: N_6  and  C_7 
+REMARK       I    between atoms: C_7  and  CA_9 
+REMARK       I    between atoms: CA_9  and  O1_10 
+REMARK       I    between atoms: O1_10  and  C1_11 
+REMARK    3  A    between atoms: CB_21  and  CG_22 
+REMARK    4  A    between atoms: CB1_27  and  CG1_28 
+REMARK       I    between atoms: CH_34  and  CB1_36 
+REMARK       I    between atoms: CB1_36  and  CA'_38 
+REMARK    5  A    between atoms: CA'_38  and  CB'_39 
+REMARK       I    between atoms: CA'_38  and  CC_42 
+REMARK       I    between atoms: CC_42  and  N2_44 
+REMARK       I    between atoms: N2_44  and  CA3_45 
+REMARK    6  A    between atoms: CA3_45  and  CD_46 
+REMARK    7  A    between atoms: CA3_45  and  CB2_56 
+REMARK       I    between atoms: CD_46  and  N3_48 
+REMARK    8  A    between atoms: N3_48  and  CM_49 
+REMARK    9  A    between atoms: CM_49  and  C21_50 
+REMARK   10  A    between atoms: CB2_56  and  CG1_58 
+ROOT
+HETATM    1  CA2 1ZK A 100       5.881  -0.001  13.808  1.00 10.02     0.139 C 
+HETATM    2  N1  1ZK A 100       4.814   0.719  13.173  1.00  3.75    -0.236 NA
+HETATM    3  C9  1ZK A 100       4.018   0.269  12.183  1.00  7.86     0.274 C 
+HETATM    4  O2  1ZK A 100       4.203  -0.810  11.651  1.00  8.38    -0.268 OA
+HETATM    5  CA1 1ZK A 100       3.077   1.346  11.644  1.00  6.15     0.192 C 
+HETATM    6  N   1ZK A 100       3.855   2.201  10.790  1.00  6.61    -0.228 NA
+HETATM    7  C   1ZK A 100       3.946   3.520  10.861  1.00 12.71     0.283 C 
+HETATM    8  O   1ZK A 100       3.224   4.213  11.565  1.00 12.61    -0.268 OA
+HETATM    9  CA  1ZK A 100       4.856   4.282   9.931  1.00 15.16     0.238 C 
+HETATM   10  O1  1ZK A 100       5.331   3.476   8.904  1.00 18.48    -0.321 OA
+HETATM   11  C1  1ZK A 100       6.308   3.824   8.036  1.00 25.21     0.095 A 
+HETATM   12  C2  1ZK A 100       6.770   5.099   8.019  1.00 27.20     0.024 A 
+HETATM   13  C3  1ZK A 100       7.805   5.484   7.142  1.00 34.05     0.002 A 
+HETATM   14  C4  1ZK A 100       8.363   4.590   6.284  1.00 32.00     0.000 A 
+HETATM   15  C4A 1ZK A 100       7.885   3.277   6.208  1.00 27.03     0.002 A 
+HETATM   16  C1A 1ZK A 100       6.824   2.882   7.117  1.00 24.79     0.022 A 
+HETATM   17  C5  1ZK A 100       8.469   2.345   5.318  1.00 26.93     0.000 A 
+HETATM   18  C8  1ZK A 100       6.398   1.548   7.074  1.00 25.31     0.002 A 
+HETATM   19  C7  1ZK A 100       6.949   0.682   6.190  1.00 23.84     0.000 A 
+HETATM   20  C6  1ZK A 100       7.986   1.072   5.322  1.00 23.82     0.000 A 
+HETATM   21  CH  1ZK A 100       5.592  -0.511  15.204  1.00 11.91     0.205 C 
+HETATM   22  OH  1ZK A 100       5.225   0.377  16.238  1.00 10.88    -0.219 OA
+HETATM   23  CB1 1ZK A 100       4.426  -1.543  15.170  1.00 11.04     0.193 C 
+HETATM   24  OB1 1ZK A 100       3.249  -0.875  15.134  1.00  8.83    -0.220 OA
+HETATM   25  CA' 1ZK A 100       4.451  -2.730  16.152  1.00  8.33     0.114 C 
+HETATM   26  CC  1ZK A 100       5.603  -3.655  15.782  1.00 13.69     0.254 C 
+HETATM   27  O3  1ZK A 100       5.748  -4.044  14.612  1.00 14.57    -0.270 OA
+HETATM   28  N2  1ZK A 100       6.478  -3.958  16.751  1.00 12.09    -0.230 NA
+HETATM   29  CA3 1ZK A 100       7.592  -4.867  16.603  1.00 12.53     0.186 C 
+ENDROOT
+BRANCH   1  30
+HETATM   30  CB1 1ZK A 100       7.140   0.860  13.743  1.00  7.62     0.027 C 
+BRANCH  30  31
+HETATM   31  CG1 1ZK A 100       7.503   1.324  12.299  1.00 17.70     0.002 C 
+HETATM   32  CD1 1ZK A 100       8.185   0.142  11.507  1.00 14.76     0.000 C 
+HETATM   33  CE1 1ZK A 100       8.381   0.689  10.066  1.00 17.02     0.000 C 
+HETATM   34  CZ  1ZK A 100       9.409   1.807  10.075  1.00 11.12     0.000 C 
+HETATM   35  CE2 1ZK A 100       8.907   2.979  10.922  1.00 20.11     0.000 C 
+HETATM   36  CD2 1ZK A 100       8.420   2.537  12.325  1.00 14.43     0.000 C 
+ENDBRANCH  30  31
+ENDBRANCH   1  30
+BRANCH  25  37
+HETATM   37  CB' 1ZK A 100       3.124  -3.441  16.281  1.00  8.24     0.011 C 
+HETATM   38  CG1 1ZK A 100       2.553  -3.986  14.933  1.00  6.84     0.001 C 
+HETATM   39  CG2 1ZK A 100       3.204  -4.586  17.345  1.00  8.75     0.001 C 
+ENDBRANCH  25  37
+BRANCH   5  40
+HETATM   40  CB  1ZK A 100       1.856   0.712  11.049  1.00  8.10     0.082 C 
+BRANCH  40  41
+HETATM   41  CG  1ZK A 100       1.015   1.845  10.511  1.00 12.40     0.082 A 
+HETATM   42  ND1 1ZK A 100       1.467   2.439   9.321  1.00 12.67    -0.227 NA
+HETATM   43  CE1 1ZK A 100       0.638   3.428   9.002  1.00 12.42     0.199 A 
+HETATM   44  NE2 1ZK A 100      -0.372   3.461   9.881  1.00 14.51    -0.221 NA
+HETATM   45  CD2 1ZK A 100      -0.105   2.479  10.887  1.00 10.26     0.116 A 
+ENDBRANCH  40  41
+ENDBRANCH   5  40
+BRANCH  29  46
+HETATM   46  CD  1ZK A 100       7.274  -5.947  17.691  1.00 16.41     0.274 C 
+HETATM   47  O4  1ZK A 100       7.311  -5.667  18.880  1.00 14.30    -0.268 OA
+HETATM   48  N3  1ZK A 100       6.871  -7.136  17.332  1.00 13.17    -0.230 NA
+BRANCH  48  49
+HETATM   49  CM  1ZK A 100       6.587  -8.286  18.106  1.00 14.93     0.174 C 
+BRANCH  49  50
+HETATM   50  C21 1ZK A 100       5.126  -8.557  18.179  1.00 16.85     0.084 A 
+HETATM   51  N11 1ZK A 100       4.497  -9.459  17.386  1.00 23.99    -0.246 NA
+HETATM   52  C61 1ZK A 100       3.164  -9.631  17.518  1.00 21.78     0.099 A 
+HETATM   53  C51 1ZK A 100       2.423  -8.911  18.456  1.00 25.30     0.021 A 
+HETATM   54  C41 1ZK A 100       3.045  -7.980  19.287  1.00 22.17     0.003 A 
+HETATM   55  C31 1ZK A 100       4.413  -7.811  19.117  1.00 21.56     0.017 A 
+ENDBRANCH  49  50
+ENDBRANCH  48  49
+ENDBRANCH  29  46
+BRANCH  29  56
+HETATM   56  CB2 1ZK A 100       8.986  -4.351  16.803  1.00 14.99     0.032 C 
+HETATM   57  CG2 1ZK A 100      10.000  -5.461  16.472  1.00 15.59     0.003 C 
+BRANCH  56  58
+HETATM   58  CG1 1ZK A 100       9.488  -3.108  16.016  1.00 15.83     0.002 C 
+HETATM   59  CD1 1ZK A 100       9.099  -3.257  14.571  1.00 11.65     0.000 C 
+ENDBRANCH  56  58
+ENDBRANCH  29  56
+TORSDOF 21

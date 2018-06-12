@@ -6,7 +6,7 @@ import copy
 import yaml
 import time
 from decimal import getcontext, Decimal
-from cec2013.cec2013 import *
+#from cec2013.cec2013 import *
 
 
 class Problem(object):

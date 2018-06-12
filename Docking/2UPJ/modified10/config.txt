@@ -1,0 +1,9 @@
+receptor = test1/2UPJ/macro.pdbqt
+ligand = test1/2UPJ/modified10/ligand.pdbqt
+center_x = 12.491
+center_y = 23.747
+center_z = 5.155
+size_x = 11.0
+size_y = 11.0
+size_z = 11.0
+out = test1/2UPJ/modified10/result.pdbqt

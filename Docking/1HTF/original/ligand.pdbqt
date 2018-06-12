@@ -1,0 +1,81 @@
+REMARK  10 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_4  and  C7_9 
+REMARK    2  A    between atoms: C2_2  and  C3_1 
+REMARK    3  A    between atoms: C3_1  and  C4_22 
+REMARK    4  A    between atoms: C3_1  and  N2_32 
+REMARK    5  A    between atoms: C4_22  and  N3_24 
+REMARK       I    between atoms: C7_9  and  N1_10 
+REMARK    6  A    between atoms: C10_13  and  C8_12 
+REMARK    7  A    between atoms: C19_15  and  C8_12 
+REMARK    8  A    between atoms: C8_12  and  N1_10 
+REMARK       I    between atoms: C30_26  and  C9_25 
+REMARK       I    between atoms: C9_25  and  N3_24 
+REMARK    9  A    between atoms: C11_33  and  C12_35 
+REMARK   10  A    between atoms: C11_33  and  N2_32 
+REMARK       I    between atoms: C12_35  and  C14_36 
+REMARK       I    between atoms: C19_15  and  C23_16 
+ROOT
+HETATM    1  C3  G26 B 100      18.459   5.374   4.789  0.50 17.94     0.218 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C2  G26 B 100      17.549   5.116   3.589  0.50 16.62     0.177 C 
+HETATM    3  N   G26 B 100      17.450   3.718   3.244  0.50 16.54    -0.276 NA
+HETATM    4  C1  G26 B 100      18.458   3.244   2.293  0.50 15.80     0.188 C 
+HETATM    5  C   G26 B 100      18.565   4.331   1.219  0.50 16.74     0.070 C 
+HETATM    6  C5  G26 B 100      17.408   4.354   0.222  0.50 16.82     0.013 C 
+HETATM    7  C6  G26 B 100      19.917   4.357   0.526  0.50 16.94     0.013 C 
+HETATM    8  S   G26 B 100      18.355   5.867   2.163  0.50 17.46    -0.114 SA
+BRANCH   4   9
+HETATM    9  C7  G26 B 100      18.208   1.854   1.709  0.50 14.48     0.274 C 
+HETATM   10  N1  G26 B 100      19.283   1.285   1.175  0.50 14.30    -0.235 NA
+HETATM   11  O   G26 B 100      17.122   1.305   1.702  0.50 13.17    -0.268 OA
+BRANCH  10  12
+HETATM   12  C8  G26 B 100      19.239   0.044   0.417  0.50 12.26     0.144 C 
+BRANCH  12  13
+HETATM   13  C10 G26 B 100      20.388   0.037  -0.597  0.50 13.24     0.207 C 
+HETATM   14  O4  G26 B 100      21.650  -0.054   0.044  0.50 14.81    -0.218 OA
+ENDBRANCH  12  13
+BRANCH  12  15
+HETATM   15  C19 G26 B 100      19.197  -1.206   1.320  0.50 11.31     0.053 C 
+HETATM   16  C23 G26 B 100      18.868  -2.506   0.582  0.50 10.46    -0.020 A 
+HETATM   17  C22 G26 B 100      19.859  -3.327   0.072  0.50 10.32    -0.004 A 
+HETATM   18  C24 G26 B 100      17.555  -2.890   0.421  0.50  9.15    -0.004 A 
+HETATM   19  C21 G26 B 100      19.525  -4.495  -0.579  0.50  9.73    -0.000 A 
+HETATM   20  C20 G26 B 100      18.203  -4.856  -0.726  0.50  9.35    -0.000 A 
+HETATM   21  C25 G26 B 100      17.211  -4.055  -0.224  0.50  8.01    -0.000 A 
+ENDBRANCH  12  15
+ENDBRANCH  10  12
+ENDBRANCH   4   9
+ENDBRANCH   1   2
+BRANCH   1  22
+HETATM   22  C4  G26 B 100      18.460   6.868   5.152  0.50 18.85     0.277 C 
+HETATM   23  O1  G26 B 100      17.557   7.627   4.844  0.50 22.32    -0.268 OA
+BRANCH  22  24
+HETATM   24  N3  G26 B 100      19.510   7.302   5.837  0.50 20.45    -0.231 NA
+HETATM   25  C9  G26 B 100      19.650   8.703   6.239  0.50 20.51     0.155 C 
+HETATM   26  C30 G26 B 100      19.098   9.056   7.601  0.50 21.56     0.002 A 
+HETATM   27  C29 G26 B 100      17.742   8.976   7.859  0.50 21.82    -0.002 A 
+HETATM   28  C31 G26 B 100      19.947   9.496   8.599  0.50 21.83    -0.002 A 
+HETATM   29  C28 G26 B 100      17.243   9.334   9.097  0.50 22.13    -0.000 A 
+HETATM   30  C27 G26 B 100      18.098   9.776  10.085  0.50 22.21    -0.000 A 
+HETATM   31  C26 G26 B 100      19.451   9.856   9.835  0.50 22.15    -0.000 A 
+ENDBRANCH  22  24
+ENDBRANCH   1  22
+BRANCH   1  32
+HETATM   32  N2  G26 B 100      18.055   4.492   5.891  0.50 16.47    -0.227 NA
+BRANCH  32  33
+HETATM   33  C11 G26 B 100      18.859   3.498   6.245  0.50 14.76     0.256 C 
+HETATM   34  O2  G26 B 100      20.001   3.394   5.835  0.50 13.49    -0.270 OA
+BRANCH  33  35
+HETATM   35  C12 G26 B 100      18.271   2.492   7.215  0.50 13.33     0.116 C 
+HETATM   36  C14 G26 B 100      18.328   1.129   6.577  0.50 13.06    -0.013 A 
+HETATM   37  C13 G26 B 100      17.678   0.913   5.372  0.50 12.12    -0.004 A 
+HETATM   38  C15 G26 B 100      19.021   0.098   7.177  0.50 11.47    -0.004 A 
+HETATM   39  C18 G26 B 100      17.719  -0.310   4.760  0.50 10.25    -0.000 A 
+HETATM   40  C17 G26 B 100      18.415  -1.329   5.357  0.50  9.98    -0.000 A 
+HETATM   41  C16 G26 B 100      19.057  -1.130   6.562  0.50 10.89    -0.000 A 
+ENDBRANCH  33  35
+ENDBRANCH  32  33
+ENDBRANCH   1  32
+TORSDOF 10
