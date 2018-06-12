@@ -51,7 +51,6 @@ class DockingProblem(Problem):
 
 		else:			
 			self.common_bound_check(trial)
-			
 
 	def cube_based_bound_check(self, trial):
 		print("Cube Based Bound Check")

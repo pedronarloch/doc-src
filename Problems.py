@@ -11,6 +11,7 @@ from decimal import getcontext, Decimal
 
 class Problem(object):
 	dimensions = 0
+	problem_type = 0
 	ub = []
 	lb = []
 

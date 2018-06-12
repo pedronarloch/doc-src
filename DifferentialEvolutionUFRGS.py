@@ -53,12 +53,12 @@ class DifferentialEvolution:
 			except yaml.YAMLError as exc:
 				print(exc)
 				sys.exit()
-				
+
 	def init_population(self):
 		for i in range(0, self.NP):
 			ind = individuals.Individual(i)
 			ind.size = self.problem.dimensions
-			ind.rand_gen(self.problem.ub, self.problem.lb)
+			ind.rand_gen(self.problem.lb, self.problem.ub)
 			ind.fitness = self.problem.evaluate(ind.dimensions)
 
 			self.population.append(ind)
@@ -286,16 +286,31 @@ class DifferentialEvolution:
 
 				trial.fitness = self.problem.evaluate(trial.dimensions)
 
-				if trial.fitness <= self.population[j].fitness:
-					self.offspring.append(trial)
-				else:
-					self.offspring.append(copy.copy(self.population[j]))
+				self.gerational_operator(trial, self.population[j])
+
+				#if trial.fitness <= self.population[j].fitness:
+				#	self.offspring.append(trial)
+				#else:
+				#	self.offspring.append(copy.copy(self.population[j]))
 
 			self.population.clear()
 			self.population = copy.copy(self.offspring)
 			self.offspring.clear()
 
 		print("Best Final Individual: ", self.best_ind[i].dimensions)
+
+
+	def gerational_operator(self, new_solution, current_solution):
+		if self.problem.problem_type == 0: #Minimization Problems
+			if new_solution.fitness <= current_solution.fitness:
+				self.offspring.append(new_solution)
+			else:
+				self.offspring.append(current_solution)
+		else: #Maximization Problems
+			if new_solution.fitness >= current_solution.fitness:
+				self.offspring.append(new_solution)
+			else:
+				self.offspring.append(current_solution)
 	
 	def get_index_by_id(self, p_id):
 		for i in range(0,self.NP):
